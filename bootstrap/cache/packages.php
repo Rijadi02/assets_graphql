@@ -70,4 +70,22 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'nuwave/lighthouse' => 
+  array (
+    'aliases' => 
+    array (
+      'graphql' => 'Nuwave\\Lighthouse\\GraphQL',
+    ),
+    'providers' => 
+    array (
+      0 => 'Nuwave\\Lighthouse\\LighthouseServiceProvider',
+      1 => 'Nuwave\\Lighthouse\\Auth\\AuthServiceProvider',
+      2 => 'Nuwave\\Lighthouse\\GlobalId\\GlobalIdServiceProvider',
+      3 => 'Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider',
+      4 => 'Nuwave\\Lighthouse\\Pagination\\PaginationServiceProvider',
+      5 => 'Nuwave\\Lighthouse\\Scout\\ScoutServiceProvider',
+      6 => 'Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider',
+      7 => 'Nuwave\\Lighthouse\\Validation\\ValidationServiceProvider',
+    ),
+  ),
 );

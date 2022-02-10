@@ -1,0 +1,17 @@
+type Asset {
+  id: ID!
+  model: String!
+}
+
+type Worker {
+  id : ID!
+  name: String!
+  departament: String!
+  assets: [Asset!]! @hasMany
+}
+
+type Query {
+  worker(id: ID! @eq): Worker @find
+  workers: [Worker!]! @all
+  assets: [Asset!]! @all
+}
